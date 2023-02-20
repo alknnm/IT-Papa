@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
-/* .bb {
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 58px;
+    color: #ffffff;
+    padding: 25px 0 0 30px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.bb {
     border: 1px solid red;
-} */
+}
 
 body {
     font-family: 'Alice', serif;font-family: 'Press Start 2P', cursive;
@@ -19,7 +29,7 @@ header {
 
 .main-wrapper {
     margin: 0 auto;
-    width: 1070px;
+    width: 1170px;
     padding: 0 15px;
 }
 
@@ -64,4 +74,58 @@ header .main-wrapper {
 .main-menu > ul > li > a:hover::after {
     width: 100%;
     opacity: 1;
+}
+
+.main-board .main-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.main_board_left-block {
+    width: 50%;
+}
+
+.main-board .main-wrapper > img {
+    margin: auto;
+}
+
+.main-board {
+    height: 500px;
+    background: url(src/bg.jpg);
+    background-size: cover;
+    background-position: 50% -50px;
+    position: relative;
+}
+
+.main-board::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(33, 42, 73, 0.6);
+}
+
+.main-board h1::before {
+    content:"";
+    width: 115px;
+    height: 5px;
+    position: absolute;
+    background: red;
+    top: 0;
+    left: 0;
+}
+
+.main-board h1::after {
+    content:"";
+    width: 5px;
+    height: 115px;
+    position: absolute;
+    background: red;
+    top: 0;
+    left: 0;
 }
