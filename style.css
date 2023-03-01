@@ -546,3 +546,12 @@ blog-container__image {
 .blog .button {
     margin-top: 30px;
 }
+
+.map > .main-wrapper > h2  {
+    margin: 30px;
+}
+
+iframe {
+    width: 100%;
+}
+
